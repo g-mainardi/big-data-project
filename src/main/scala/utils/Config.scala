@@ -3,7 +3,7 @@ package utils
 object Config {
 
   // The local directory containing this repository
-  val projectDir :String = "/C:/Users/giosy/BIGDATA/lab-cse-25-26"
+  val projectDir :String = "/C:/Users/giosy/BIGDATA/big-data-project"
   // The name of the shared bucket on AWS S3 to read datasets (so you don't need to upload them in your bucket)
   val s3sharedBucketName :String = "unibo-bd2526-egallinucci-shared"
   // The name of your bucket on AWS S3

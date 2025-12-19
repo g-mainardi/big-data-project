@@ -20,10 +20,10 @@ object GHArchiveHypeIndex {
     // Create a SparkConf object; the configuration settings you put here will override those given in the Run/Debug configuration
     val sparkConf = new SparkConf()
       .setAppName("MovieLens job")
-      .set("spark.driver.memory", "4g")
-//      .set("spark.executor.memory", "4g")
-//      .set("spark.executor.cores", "4")
-//      .set("spark.executor.instances", "2")
+//      .set("spark.driver.memory", "4g")
+      .set("spark.executor.memory", "4g")
+      .set("spark.executor.cores", "4")
+      .set("spark.executor.instances", "2")
     val spark = SparkSession.builder.config(sparkConf).getOrCreate()
 
     val sqlContext = spark.sqlContext // needed to save as CSV
